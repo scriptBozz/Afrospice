@@ -194,7 +194,7 @@ box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.1);
 
 /* Individual flex divs */
 .flex-item {
-  width: calc(); /* Adjust width to fit 3 divs per row with some spacing */
+   /* Adjust width to fit 3 divs per row with some spacing */
   margin-bottom: 20px; /* Margin between flex items */
   background-color: #f0f0f0; /* Background color for demonstration */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
