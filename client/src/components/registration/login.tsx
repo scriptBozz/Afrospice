@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import axios from "axios";
+import { Link } from "react-router-dom";
+// import { useDispatch } from "react-redux";
 
 // import { getUserLoginData } from "../redux/slices/users";
 
@@ -14,7 +13,6 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-
 
 function Copyright(props: any) {
   return (
@@ -29,7 +27,6 @@ function Copyright(props: any) {
         MarketPlace
       </Link>{" "}
       {new Date().getFullYear()}
-      {"."}
     </Typography>
   );
 }
@@ -46,8 +43,8 @@ const user: User = {
 
 export default function Login() {
   const [userInfo, setUserInfo] = useState<User>(user);
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // const navigate = useNavigate();
+  // const dispatch = useDispatch();
 
   // function onClickHandler() {
   //   const endpoint = "http://localhost:7000/user/login";
@@ -120,7 +117,6 @@ export default function Login() {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2, bgcolor: "rgba(39, 87, 207, 0.931)" }}
-            
           >
             Sign In
           </Button>
