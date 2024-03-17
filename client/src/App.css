@@ -1,0 +1,223 @@
+
+.homepage{
+  /* background-image: url(../src/assets/images/pexels-lukas-616401.jpg); */
+  background-color: rgb(241, 241, 246);
+  background-position: center;
+  background-size:cover;
+  
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width:100%;
+  height: 10vh;
+  border: 1px solid gray;
+
+}
+.navmenuitems{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.navmenuitem{
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-weight: bolder;
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.product-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 70%;
+  margin: 0 auto;
+
+}
+.productDetail{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1); 
+  
+}
+.pd-data{
+  width: 500px;
+box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  align-items: center;
+  justify-content:flex-start;
+  
+ 
+}
+.pd-data >p{
+  margin : 0;
+}
+
+.landing{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.landingtext{
+  font-family: "Ojuju", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-weight: bolder;
+  font-style: normal;
+  text-decoration: none;
+}
+.landingheader{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.landing1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(246, 247, 248);
+ 
+  
+}
+.landinghow{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 400px;
+}
+.landinghow >div {
+
+  color: rgb(1, 1, 1);
+  
+}
+
+.downloadapplanding{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+  background-color: azure;
+  
+}
+.downloadappdiv{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+.downloadlink{
+  width: 200px;
+  min-height: 50px;
+}
+
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #232020;
+  /* position: fixed;
+  left: 0;
+  bottom: 0; */
+  background-color: whitesmoke;
+  
+}
+.footeritemdiv1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.footeritemdiv2{
+  text-align: center;
+}
+
+
+ .search-container {
+      display: flex;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .search-input {
+      width: 400px;
+      height: 70px;
+      border-radius: 20px 0 0 20px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+    .search-button {
+      height: 70px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+    }
+
+    .divider{
+      height: 100px;
+    }
+    
+
+
+
+    /* Container for flex divs */
+
+
+/* Individual flex divs */
+.flex-item {
+  width: calc(); /* Adjust width to fit 3 divs per row with some spacing */
+  margin-bottom: 20px; /* Margin between flex items */
+  background-color: #f0f0f0; /* Background color for demonstration */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.store{
+  display: flex;
+  flex-direction: row;
+}
+
+.favourites{
+  width: 400px;
+  margin: 0 auto;
+   border-radius: 10px; /* Border radius for rounded corners */
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Box shadow with horizontal offset, vertical offset, blur radius, spread radius, and color */
+
+}
+
+.favourite-item{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1); /* Box shadow with horizontal offset, vertical offset, blur radius, spread radius, and color */
+
+}
