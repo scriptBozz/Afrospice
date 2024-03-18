@@ -11,6 +11,7 @@ import Vendors from "../components/vendors";
 import Login from "../components/registration/login";
 import Register from "../components/registration/register";
 
+
 export default function Home() {
   return (
     <div className="homepage">
@@ -25,6 +26,7 @@ export default function Home() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>
+
       <Footeritem />
     </div>
   );

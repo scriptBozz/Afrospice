@@ -43,7 +43,7 @@ const productSlice = createSlice({
 
     removeFromFavourites: (state, action: PayloadAction<Product>) => {
       const result = state.favourites.filter(
-        (item) => item.title !== action.payload.title
+        (item) => item._id !== action.payload._id
       );
       state.favourites = result;
     },
