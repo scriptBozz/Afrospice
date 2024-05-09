@@ -1,10 +1,15 @@
+
+
 import { Router } from "express";
-import { createUser, getUsers } from "../controller/user";
-import User from "../models/user";
+import { createUser, getUsers , getUserById, updateUserById, loginWithPassword} from "../controller/user";
+import passport from "passport";
+
 
 const router = Router();
-router.post("/user", createUser);
-router.get("/users", getUsers);
-// router.get("/product", getProductById);
+router.post("/", createUser);
+router.get("/", getUsers);
+router.get("/:_id", getUserById);
+router.put("/:id",passport.authenticate("jwt",{session:false}) ,updateUserById)
+router.post("/login",loginWithPassword )
 
 export default router;

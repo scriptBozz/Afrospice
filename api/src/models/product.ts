@@ -26,7 +26,7 @@ export type ProductDocument = Document & {
 const productSchema = new mongoose.Schema({
   
   title: { type: String },
-  category: { type: String },
+  category: { type: String , enum:["spice", "meal"]},
   price: { type: String },
   likes: { type: Number },
   review: [
