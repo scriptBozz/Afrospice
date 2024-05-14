@@ -6,9 +6,9 @@ import passport from "passport";
 
 
 const router = Router();
-router.post("/", createUser);
+router.post("/register", createUser);
 router.get("/", getUsers);
-router.get("/:_id", getUserById);
+router.get("/:id", getUserById)
 router.put("/:id",passport.authenticate("jwt",{session:false}) ,updateUserById)
 router.post("/login",loginWithPassword )
 

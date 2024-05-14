@@ -12,8 +12,11 @@ import googleplay from "../assets/images/googleplay.png"
 export default function landing() {
   return (
     <div className="landing">
+      <div className="container ">
+        <div className="left-content"> left</div>
+        <div className="right-content">right</div>
+      </div>
       <div className="landingheader">
-        {" "}
         <div className="landingtext">
           <Typography
             variant="h2"
@@ -51,10 +54,10 @@ export default function landing() {
 
       <div className="landing1">
         <div>
-          <Typography variant="h4" gutterBottom fontFamily="ojuju">
+          <Typography variant="h4" gutterBottom className="landing1-typo">
             Unlock Authentic Flavors, Seamless Connections
           </Typography>
-          <Typography variant="h5" gutterBottom fontFamily="ojuju">
+          <Typography variant="h5" gutterBottom className="landing1-typo">
             How to order
           </Typography>
         </div>
@@ -68,7 +71,7 @@ export default function landing() {
           <div>
             <StoreIcon fontSize="large" />
             <Typography variant="h5" fontFamily="ojuju">
-              Find a list of vendors
+              Find list of vendors
             </Typography>
           </div>
           <div>
@@ -76,7 +79,7 @@ export default function landing() {
               <RoomServiceIcon fontSize="large" />
             </IconButton>
             <Typography variant="h5" fontFamily="ojuju">
-              Order for delivery or pickup
+              delivery or pickup
             </Typography>
           </div>
         </div>

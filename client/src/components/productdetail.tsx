@@ -3,8 +3,10 @@ import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../redux/store";
 import { Button } from "@mui/material";
+import { cartActions } from "../redux/slices/carts";
+import { Product } from "../types/type";
 
-import { fetchProductDetail } from "../redux/thunk/products"; 
+import { fetchProductDetail } from "../redux/thunk/products";
 
 export default function ProductDetail() {
   const productDetail = useSelector(
@@ -12,6 +14,10 @@ export default function ProductDetail() {
   );
   const dispatch = useDispatch<AppDispatch>();
   const { id } = useParams<{ id: string }>();
+
+  function onClickHandler(item: Product) {
+    dispatch(cartActions.addCartList(item));
+  }
 
   useEffect(() => {
     if (id) {
@@ -40,8 +46,19 @@ export default function ProductDetail() {
           of at least €25
         </p>
       </div>
-      <div style={{display:"flex", width:"500px", justifyContent:"space-between"}}>
-        <Button variant="outlined">Add to cart</Button>
+      <div
+        style={{
+          display: "flex",
+          width: "500px",
+          justifyContent: "space-between",
+        }}
+      >
+        <Button
+          variant="outlined"
+          onClick={() => onClickHandler(productDetail)}
+        >
+          Add to cart
+        </Button>
         <Link to="/cart">
           <Button variant="outlined">Back</Button>
         </Link>

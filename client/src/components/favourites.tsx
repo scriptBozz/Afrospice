@@ -17,7 +17,7 @@ export default function Favourites() {
   };
 
   return (
-    <div className="favourites">
+    <div className="favourites card">
       <h2>Favourites</h2>
       {favourites.map((item) => (
         <div key={item._id} className="favourite-item">

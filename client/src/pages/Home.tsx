@@ -10,6 +10,9 @@ import Wishlist from "../components/wishlist";
 import Vendors from "../components/vendors";
 import Login from "../components/registration/login";
 import Register from "../components/registration/register";
+import UserInformation from "../components/registration/userinformation";
+import OrderList from "../components/order/orderList";
+import CartList from "../components/order/cart/cartList";
 
 
 export default function Home() {
@@ -21,6 +24,10 @@ export default function Home() {
         <Route path="/favourites" element={<Favourites />}></Route>
         <Route path="/products" element={<Store />}></Route>
         <Route path="/product/:id" element={<ProductDetail />}></Route>
+        <Route path="/user" element={<UserInformation />} />
+
+        <Route path="/cart" element={<CartList />} />
+        <Route path="/order" element={<OrderList />} />
         <Route path="/wishlist" element={<Wishlist />}></Route>
         <Route path="/vendors" element={<Vendors />}></Route>
         <Route path="/login" element={<Login />}></Route>

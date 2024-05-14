@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-// import { getUserLoginData } from "../redux/slices/users";
+import { userActions } from "../../redux/slices/user";
 
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -43,30 +45,29 @@ const user: User = {
 
 export default function Login() {
   const [userInfo, setUserInfo] = useState<User>(user);
-  // const navigate = useNavigate();
-  // const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  // function onClickHandler() {
-  //   const endpoint = "http://localhost:7000/user/login";
-  //   axios
-  //     .post(endpoint, userInfo)
-  //     .then((res) => {
-  //       if (res.status === 200) {
-  //         dispatch(getUserLoginData(res.data.userData));
-  //         localStorage.setItem("userToken", res.data.token);
-  //         localStorage.setItem("_id", res.data.userData._id);
-  //         navigate("/");
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       if (error.response.status === 404) {
-  //         alert("Account not found. Please register, before login in.");
-  //         navigate("/register");
-  //         return;
-  //       }
-  //     });
-  //   setUserInfo(user);
-  // }
+  function onClickHandler() {
+    const endpoint = "http://localhost:8000/users/login";
+    axios
+      .post(endpoint, userInfo)
+      .then((res) => {
+        if (res.status === 200) {
+          dispatch(userActions.getUserLoginData(res.data.userData));
+          localStorage.setItem("userToken", res.data.token);
+          navigate("/user");
+        }
+      })
+      .catch((error) => {
+        if (error.response && error.response.status === 403) {
+          alert("Account not found. Please register, before login in.");
+          navigate("/register");
+          return;
+        }
+      });
+    setUserInfo(user);
+  }
 
   return (
     <Container component="main" maxWidth="xs" sx={{ p: "3rem 0" }}>
@@ -117,6 +118,7 @@ export default function Login() {
             fullWidth
             variant="contained"
             sx={{ mt: 3, mb: 2, bgcolor: "rgba(39, 87, 207, 0.931)" }}
+            onClick={onClickHandler}
           >
             Sign In
           </Button>

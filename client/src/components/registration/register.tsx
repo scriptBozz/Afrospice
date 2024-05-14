@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
+
+import {User} from "../../types/type"
+
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -11,6 +14,8 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+
+
 
 function Copyright(props: any) {
   return (
@@ -30,35 +35,41 @@ function Copyright(props: any) {
   );
 }
 
-type User = {
-  firstName: string;
-  lastName: string;
-  email: string;
-  password: string;
-};
+// type User = {
+//   firstName: string;
+//   lastName: string;
+//   email: string;
+//   password: string;
+// };
 
 const user: User = {
+  _id: "",
+  username:"",
   firstName: "",
   lastName: "",
+  category: "",
   email: "",
-  password: "",
+  image: "",
+  password: ""
 };
 
 export default function Register() {
   const [userInfo, setUserInfo] = useState<User>(user);
   const navigate = useNavigate();
 
+
   function onClickHandler() {
-    const endpoint = "http://localhost:7000/user/register";
+    const endpoint = "http://localhost:8000/users/register";
     axios
       .post(endpoint, userInfo)
       .then((res) => {
         if (res.status === 200) {
+         
           navigate("/login");
         }
       })
       .catch((error) => {
-        if (error.response.status === 500) {
+        if (error.res === 500) {
           alert("Your email is already registered. Please log in.");
           navigate("/login");
         }
@@ -112,7 +123,7 @@ export default function Register() {
                 label="Last Name"
                 name="lastName"
                 autoComplete="family-name"
-                value={userInfo.lastName}
+                // value={userInfo.lastName}
                 onChange={(event) =>
                   setUserInfo({ ...userInfo, lastName: event.target.value })
                 }

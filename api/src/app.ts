@@ -5,6 +5,7 @@ import passport from "passport";
 import productRouter from "./routes/products";
 import userRouter from "./routes/users";
 import sellerRouter from "./routes/seller";
+import orderRouter from "./routes/order";
 import { jwtstrategy } from "./config/passport";
 
 const app = Express();
@@ -16,6 +17,8 @@ passport.use(jwtstrategy)
 
 app.use("/products", productRouter);
 app.use("/users", userRouter);
+app.use ("/orders", orderRouter);
 app.use("/seller", sellerRouter);
+
 
 export default app;

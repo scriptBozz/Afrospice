@@ -12,7 +12,7 @@ export type Product = {
   _id: string;
   title: string;
   category: string;
-  price: string;
+  price: number;
   likes: number;
   review: Review[];
   vendor: string;
@@ -33,4 +33,17 @@ export type User = {
   category: string;
   email: string;
   image: string;
+  password: string;
 }
+
+export type ProductOrder = Product & {
+  quantity: number;
+};
+
+export type Order = {
+  _id: string;
+  userId: string;
+  productList: ProductOrder[];
+  createdAt: string;
+};
+

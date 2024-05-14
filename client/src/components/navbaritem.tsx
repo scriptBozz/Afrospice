@@ -59,6 +59,15 @@ export default function NavBarItem() {
           </ListItem>
         </Link>
 
+        <Link to={"/user"}>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>my profile</ListItemIcon>
+              <ListItemText />
+            </ListItemButton>
+          </ListItem>
+        </Link>
+
         <Link to={"/Login"}>
           <ListItem disablePadding>
             <ListItemButton>

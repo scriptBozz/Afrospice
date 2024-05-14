@@ -23,7 +23,7 @@ export type ProductDocument = Document & {
   description: string;
 };
 
-const productSchema = new mongoose.Schema({
+export const ProductSchema = new mongoose.Schema({
   
   title: { type: String },
   category: { type: String , enum:["spice", "meal"]},
@@ -40,4 +40,4 @@ const productSchema = new mongoose.Schema({
   description: { type: String },
 });
 
-export default mongoose.model<ProductDocument>("Products", productSchema);
+export default mongoose.model<ProductDocument>("Products", ProductSchema);

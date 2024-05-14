@@ -1,14 +1,15 @@
 import { AppDispatch } from "../store";
-import { UserAction } from "../slices/user";
+import  { userActions } from "../slices/user";
 
 
-export const fetchProductData = () => {
-  const productsurl = `http://localhost:8000/users`;
+
+export const fetchUserData = () => {
+  const userurl = `http://localhost:8000/user`;
   return async (dispatch: AppDispatch) => {
-    const response = await fetch(productsurl);
-    const productData = await response.json();
+    const response = await fetch(userurl);
+    const userData = await response.json();
 
-    dispatch(UserAction.getUsers(productData));
+    dispatch(userActions.getUsers(userData));
   };
 };
 

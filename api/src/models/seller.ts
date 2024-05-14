@@ -26,4 +26,4 @@ const sellerSchema = new mongoose.Schema({
   location: { type: String },
 });
 
-export default mongoose.model<SellerDocument>("Sellers", sellerSchema);
+export default mongoose.model<SellerDocument>("Seller", sellerSchema);
