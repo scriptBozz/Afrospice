@@ -1,20 +1,33 @@
 import React from "react";
-import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ForumRoundedIcon from "@mui/icons-material/ForumRounded";
 export default function footeritem() {
   return (
     <div className="footer">
       <div className="footeritemdiv1">
         <div className="footeritem socials">
-          <FacebookSharpIcon />
-          <WhatsAppIcon />
-        </div>
-        <div className="footeritem footerbrand">
           <h1>AfroSpice</h1>
         </div>
+        <div className="footeritem footerbrand">
+          <li>info@afrospice.com</li>
+          <li>+2341234567545</li>
+          <li>
+            <a href="/">facebook</a>
+          </li>
+          <a href="/contact">contacts us</a>
+        </div>
         <div className="footeritem support">
-          <ForumRoundedIcon />
+          <li>
+            <a href="/">home</a>
+          </li>
+          <li>
+            <a href="/favorites">favourites</a>
+          </li>
+          <li>
+            <a href="/orders">orders</a>
+          </li>
+          <li>
+            <a href="/Account">My Account</a>
+          </li>
+          <a href="/shop">Shop</a>
         </div>
       </div>
       <div className="footeritemdiv2">

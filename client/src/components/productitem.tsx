@@ -73,6 +73,7 @@ export default function Productitem({ product }: Prop) {
             aria-label="add to favorites"
             onClick={() => {
               addToFavourites(product);
+            
             }}
           >
             <FavoriteIcon />

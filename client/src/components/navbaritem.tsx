@@ -19,7 +19,7 @@ export default function NavBarItem() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)} className="drawer">
       <List>
         <Link to={"/"}>
           <ListItem disablePadding>
@@ -103,9 +103,9 @@ export default function NavBarItem() {
       </div>
       <div className="navactionkeys">
         <Link to="/login">
-          <Button variant="contained" className="navmenuitem">
+          <button  className="navmenuitem navbutton">
             Login
-          </Button>
+          </button>
         </Link>
       </div>
       <Button onClick={toggleDrawer(true)}>

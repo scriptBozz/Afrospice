@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Wishlist() {
   return (
-    <div>Wish</div>
+    <div style={{height:"100vh"}}>Wish</div>
   )
 }

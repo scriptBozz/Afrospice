@@ -1,7 +1,5 @@
 import React from 'react'
 
 export default function Vendors() {
-  return (
-    <div>vendorV</div>
-  )
+  return <div style={{ height: "100vh", textAlign:"center"}}> comming soon...</div>;
 }

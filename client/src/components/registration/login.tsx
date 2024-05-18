@@ -26,7 +26,7 @@ function Copyright(props: any) {
     >
       {"Copyright © "}
       <Link to={"/"} color="inherit">
-        MarketPlace
+        Afrospice
       </Link>{" "}
       {new Date().getFullYear()}
     </Typography>
@@ -79,7 +79,7 @@ export default function Login() {
           alignItems: "center",
         }}
       >
-        <Avatar sx={{ m: 1, bgcolor: "rgba(39, 87, 207, 0.931)" }}>
+        <Avatar sx={{ m: 1, bgcolor: "#FF8000" }}>
           <LockOutlinedIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
@@ -117,7 +117,7 @@ export default function Login() {
           <Button
             fullWidth
             variant="contained"
-            sx={{ mt: 3, mb: 2, bgcolor: "rgba(39, 87, 207, 0.931)" }}
+            sx={{ mt: 3, mb: 2, bgcolor: "#FF8000" }}
             onClick={onClickHandler}
           >
             Sign In
