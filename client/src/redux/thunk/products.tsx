@@ -9,7 +9,9 @@ export const fetchProductData = () => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Origin': '*',
+        "Access-Control-Allow-Headers" : "Content-Type",
+        "Access-Control-Allow-Methods": "PUT,POST,GET",
         Accept: "application/json",
       },
     });
