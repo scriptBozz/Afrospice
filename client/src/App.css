@@ -5,7 +5,9 @@ li{
   list-style: none;
 }
 
-
+body{
+  background-color: #EFEDEA;
+}
 
 .cartItem{
  display: flex;
@@ -148,7 +150,7 @@ align-items: center;
 .navbarbrand h2 {
   margin: 0;
   font-size: 24px;
-  color: #333333;
+  color: #ffffff;
 }
 
 .navmenuitems {
@@ -179,7 +181,9 @@ align-items: center;
 .navbutton{
   background-color: #FF8000 !important;
   padding: 13px;
-  border-radius: 5px;
+  padding-left:15px;
+  padding-right: 15px;
+  border-radius: 50px;
   border: none;
 
 }
@@ -279,7 +283,7 @@ align-items: center;
 }
 
 .downloadapplanding {
-  background: linear-gradient(to bottom, #4caf50, #388e3c);
+  background: linear-gradient(to bottom, #FF8000, #a96a03);
   color: #ffffff;
   text-align: center;
   padding: 40px;
@@ -332,9 +336,16 @@ align-items: center;
 .container {
   display: flex;
   height: 500px; /* Adjust the height as needed */
+  width: 80%;
   position: relative;
   background-color: #765827; /* Fallback color */
-  background-image: linear-gradient(to bottom right, #765827, #9c7e3b); /* Gradient */
+  background-image:url(./assets/images/banner.jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(to bottom right, #c2aa85, #684907); */
+  margin: auto;
+  
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
 }
@@ -346,36 +357,11 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  ; /* Adjust background color as needed */
   position: relative;
 }
 
-/* .right-content:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  border-left: 1px solid #000; 
-  transform: skewY(-45deg);
-  width: 50px; 
-} */
 
-.right-content:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-right: 1px solid #000; 
-  /* transform: skewY(3deg); */
-  width: 50px; /* Adjust the width of the slanted line */
-}
-
-
-
-
-
+/* ***** PRODUCT ****** */
 
 .productDetail {
   display: flex;

@@ -63,20 +63,20 @@ export default function landing() {
         </div>
         <div className="landinghow">
           <div>
-            <PinDropIcon fontSize="large" />
+            <PinDropIcon fontSize="large" sx={{ color: "#FF8000" }} />
             <Typography variant="h5" fontFamily="ojuju">
               Enter your Location
             </Typography>
           </div>
           <div>
-            <StoreIcon fontSize="large" />
+            <StoreIcon fontSize="large" sx={{ color: "#FF8000" }} />
             <Typography variant="h5" fontFamily="ojuju">
               Find list of vendors
             </Typography>
           </div>
           <div>
             <IconButton>
-              <RoomServiceIcon fontSize="large" />
+              <RoomServiceIcon fontSize="large" sx={{ color: "#FF8000" }} />
             </IconButton>
             <Typography variant="h5" fontFamily="ojuju">
               delivery or pickup

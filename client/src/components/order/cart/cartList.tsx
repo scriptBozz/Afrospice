@@ -49,7 +49,7 @@ export default function CartList() {
   }
 
   return (
-    <div className="card">
+    <div className="card" style={{height:"100vh"}}>
       <h1> Your Cart List</h1>
       <div className="cartList">
         {cartList.map((item) => (

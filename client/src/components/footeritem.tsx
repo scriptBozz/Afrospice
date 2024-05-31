@@ -1,4 +1,25 @@
 import React from "react";
+import { Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+
+function Copyright(props: any) {
+  return (
+    <Typography
+      variant="body2"
+      color="text.secondary"
+      align="center"
+      {...props}
+    >
+      {"Copyright © "}
+      <Link to={"/"} color="inherit">
+        Afrospice
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
+
 export default function footeritem() {
   return (
     <div className="footer">
@@ -31,7 +52,7 @@ export default function footeritem() {
         </div>
       </div>
       <div className="footeritemdiv2">
-        <p>created by Hex</p>
+        <Copyright sx={{ mt: 5 }} />
       </div>
     </div>
   );

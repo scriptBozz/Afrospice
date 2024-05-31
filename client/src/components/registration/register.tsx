@@ -161,7 +161,10 @@ export default function Register() {
           >
             Sign Up
           </Button>
-          <Grid container justifyContent="flex-end">
+          <Grid
+            container
+            sx={{ alignItems: "center", justifyContent: "center" }}
+          >
             <Grid item>
               <Link to="/login">Already have an account? Sign in</Link>
             </Grid>

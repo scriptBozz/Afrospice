@@ -19,7 +19,12 @@ export default function NavBarItem() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)} className="drawer">
+    <Box
+      sx={{ width: 250, height:"50vh" }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      className="drawer"
+    >
       <List>
         <Link to={"/"}>
           <ListItem disablePadding>
@@ -67,11 +72,18 @@ export default function NavBarItem() {
             </ListItemButton>
           </ListItem>
         </Link>
-
         <Link to={"/Login"}>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>Login</ListItemIcon>
+              <ListItemText />
+            </ListItemButton>
+          </ListItem>
+        </Link>
+        <Link to={"/shop"}>
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>Buy/Order</ListItemIcon>
               <ListItemText />
             </ListItemButton>
           </ListItem>
@@ -103,15 +115,19 @@ export default function NavBarItem() {
       </div>
       <div className="navactionkeys">
         <Link to="/login">
-          <button  className="navmenuitem navbutton">
-            Login
-          </button>
+          <button className="navmenuitem navbutton">Login</button>
+        </Link>
+        <Link to="/products">
+          <button className="navmenuitem navbutton">Buy / Order</button>
         </Link>
       </div>
-      <Button onClick={toggleDrawer(true)}>
-        <MenuIcon sx={{ fontSize: 40 }} />
+      <Button onClick={toggleDrawer(true)} sx={{ bgcolor: "#FF8000" }}>
+        <MenuIcon sx={{ fontSize: 40, color:"white"}} />
       </Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer
+        open={open}
+        onClose={toggleDrawer(false)}
+      >
         {DrawerList}
       </Drawer>
     </div>

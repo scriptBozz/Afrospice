@@ -122,7 +122,7 @@ export default function Login() {
           >
             Sign In
           </Button>
-          <Grid container>
+          <Grid container sx={{ alignItems:"center", justifyContent:"center" }}>
             <Grid item>
               <Link to={"/register"}>{"Don't have an account? Sign Up"}</Link>
             </Grid>

@@ -40,7 +40,7 @@ export default function Productitem({ product }: Prop) {
       <Card sx={{ maxWidth: 250 }} key={product._id}>
         <CardHeader
           avatar={
-            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            <Avatar sx={{ bgcolor: "#FF8000" }} aria-label="recipe">
               {product.title.charAt(0).toUpperCase()}
             </Avatar>
           }
@@ -73,13 +73,12 @@ export default function Productitem({ product }: Prop) {
             aria-label="add to favorites"
             onClick={() => {
               addToFavourites(product);
-            
             }}
           >
             <FavoriteIcon />
           </IconButton>
-        
-          <IconButton onClick={() => onClickHandler(product)}>
+
+          <IconButton onClick={() => { onClickHandler(product); }}>
             <AddShoppingCartIcon />
           </IconButton>
         </CardActions>
