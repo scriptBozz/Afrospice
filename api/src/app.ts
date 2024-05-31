@@ -16,15 +16,17 @@ app.use(passport.initialize());
 passport.use(jwtstrategy)
 
 
-const corsOptions = {
-  origin: "*", // Specify the origin you want to allow
-  optionsSuccessStatus: 200, // Some legacy browsers choke on 204
-  methods: "GET,POST,PUT,DELETE,OPTIONS",
-  allowedHeaders: ["Content-Type","Authorization"],
-};
+app.use(
+  Cors({
+    origin: "https://afrospicefe.onrender.com", // Your front-end URL
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // If you need to include credentials in requests
+  })
+);
 
-// Use the CORS middleware with the options
-app.use(Cors(corsOptions));
+// Handle preflight requests
+app.options("*", Cors());
 
 
 app.use("/products", productRouter);
