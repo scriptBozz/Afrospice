@@ -19,6 +19,8 @@ passport.use(jwtstrategy)
 const corsOptions = {
   origin: "https://afrospicefe.onrender.com", // Specify the origin you want to allow
   optionsSuccessStatus: 200, // Some legacy browsers choke on 204
+  methods: "GET,POST,PUT,DELETE,OPTIONS",
+  allowedHeaders: "Content-Type,Authorization",
 };
 
 // Use the CORS middleware with the options
