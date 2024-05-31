@@ -11,9 +11,19 @@ import { jwtstrategy } from "./config/passport";
 const app = Express();
 
 app.use(Express.json());
-app.use(Cors());
+// app.use(Cors());
 app.use(passport.initialize());
 passport.use(jwtstrategy)
+
+
+const corsOptions = {
+  origin: "https://afrospicefe.onrender.com", // Specify the origin you want to allow
+  optionsSuccessStatus: 200, // Some legacy browsers choke on 204
+};
+
+// Use the CORS middleware with the options
+app.use(Cors(corsOptions));
+
 
 app.use("/products", productRouter);
 app.use("/users", userRouter);
