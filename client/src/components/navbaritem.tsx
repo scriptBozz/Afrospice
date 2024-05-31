@@ -80,7 +80,7 @@ export default function NavBarItem() {
             </ListItemButton>
           </ListItem>
         </Link>
-        <Link to={"/shop"}>
+        <Link to={"/products"}>
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>Buy|Order</ListItemIcon>

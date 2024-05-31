@@ -40,7 +40,7 @@ export default function footeritem() {
             <a href="/">home</a>
           </li>
           <li>
-            <a href="/favorites">favourites</a>
+            <a href="/favourites">favourites</a>
           </li>
           <li>
             <a href="/orders">orders</a>
@@ -48,7 +48,7 @@ export default function footeritem() {
           <li>
             <a href="/Account">My Account</a>
           </li>
-          <a href="/shop">Shop</a>
+          <a href="/products">Shop</a>
         </div>
       </div>
       <div className="footeritemdiv2">

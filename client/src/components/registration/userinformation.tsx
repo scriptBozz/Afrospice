@@ -67,7 +67,14 @@ export default function UserInformation() {
   }
   if (!userDetail) {
     
-    return <div> no data ...</div>;
+    return (
+      <div className="nodata-div" style={{ height: "100vh", width: "100%", display:"flex",justifyContent:"center", alignItems:"center" }}>
+        <div className="no-data" >
+        
+          no data yet...
+        </div>
+      </div>
+    );
    
   }
   return (
