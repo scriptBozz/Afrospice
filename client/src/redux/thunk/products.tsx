@@ -2,24 +2,15 @@ import { AppDispatch } from "../store";
 import { productActions } from "../slices/product";
 import { productDetailActions } from "../slices/productDetail";
 
-export const fetchProductData = () => {
-  const productsurl = `https://afrospicebe.onrender.com/products`;
+export function fetchProductData() {
+  const productUrl = "https://afrospicebe.onrender.com/products";
   return async (dispatch: AppDispatch) => {
-    const response = await fetch(productsurl, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        'Access-Control-Allow-Origin': '*',
-        "Access-Control-Allow-Headers" : "Content-Type",
-        "Access-Control-Allow-Methods": "PUT,POST,GET",
-        Accept: "application/json",
-      },
-    });
-      const productData = await response.json();
-      
+    // axios or fetch
+    const response = await fetch(productUrl);
+    const productData = await response.json();
     dispatch(productActions.getProductData(productData));
   };
-};
+}
 
 export const fetchProductDetail = (productId: string) => {
   return async (dispatch: AppDispatch) => {
