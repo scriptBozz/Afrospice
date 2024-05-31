@@ -3,7 +3,7 @@ import { productActions } from "../slices/product";
 import { productDetailActions } from "../slices/productDetail";
 
 export const fetchProductData = () => {
-  const productsurl = `http://localhost:8000/products`;
+  const productsurl = `https://afrospicebe.onrender.com/products`;
   return async (dispatch: AppDispatch) => {
     const response = await fetch(productsurl);
       const productData = await response.json();
@@ -15,7 +15,7 @@ export const fetchProductData = () => {
 export const fetchProductDetail = (productId: string) => {
   return async (dispatch: AppDispatch) => {
     try {
-      const productDetailurl = `http://localhost:8000/products/${productId}`;
+      const productDetailurl = `https://afrospicebe.onrender.com/products/${productId}`;
 
       // Fetch data from the backend server
       const response = await fetch(productDetailurl);

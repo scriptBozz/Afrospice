@@ -49,7 +49,7 @@ export default function Login() {
   const dispatch = useDispatch();
 
   function onClickHandler() {
-    const endpoint = "http://localhost:8000/users/login";
+    const endpoint = "https://afrospicebe.onrender.com/users/login";
     axios
       .post(endpoint, userInfo)
       .then((res) => {

@@ -4,7 +4,7 @@ import  { userActions } from "../slices/user";
 
 
 export const fetchUserData = () => {
-  const userurl = `http://localhost:8000/user`;
+  const userurl = `https://afrospicebe.onrender.com/user`;
   return async (dispatch: AppDispatch) => {
     const response = await fetch(userurl);
     const userData = await response.json();

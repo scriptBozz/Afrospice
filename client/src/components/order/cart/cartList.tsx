@@ -18,7 +18,7 @@ export default function CartList() {
   function onClickHandler() {
     // send data to backend
     const token = localStorage.getItem("userToken");
-    const url = `http://localhost:8000/orders/${userDetail?._id}`;
+    const url = `https://afrospicebe.onrender.com/${userDetail?._id}`;
 
     axios
       .post(

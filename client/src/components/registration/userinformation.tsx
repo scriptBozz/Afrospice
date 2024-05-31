@@ -39,7 +39,7 @@ export default function UserInformation() {
     // name???
     const token = localStorage.getItem("userToken");
 
-    const url = `http://localhost:3000/users/${userDetail?._id}`;
+    const url = `https://afrospicebe.onrender.com/users/${userDetail?._id}`;
     axios
       .put(url, formData, {
         headers: {

@@ -53,7 +53,7 @@ export default function Register() {
 
 
   function onClickHandler() {
-    const endpoint = "http://localhost:8000/users/register";
+    const endpoint = "https://afrospicebe.onrender.com/users/register";
     axios
       .post(endpoint, userInfo)
       .then((res) => {
