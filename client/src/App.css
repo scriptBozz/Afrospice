@@ -338,7 +338,7 @@ align-items: center;
   height: 500px; /* Adjust the height as needed */
   width: 80%;
   position: relative;
-  background-color: #765827; /* Fallback color */
+  background-color: #825e26; /* Fallback color */
   background-image:url(./assets/images/banner.jpeg);
   background-position: center;
   background-size: contain;
