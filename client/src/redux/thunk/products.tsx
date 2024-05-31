@@ -5,7 +5,13 @@ import { productDetailActions } from "../slices/productDetail";
 export const fetchProductData = () => {
   const productsurl = `https://afrospicebe.onrender.com/products`;
   return async (dispatch: AppDispatch) => {
-    const response = await fetch(productsurl);
+    const response = await fetch(productsurl, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
       const productData = await response.json();
       
     dispatch(productActions.getProductData(productData));
