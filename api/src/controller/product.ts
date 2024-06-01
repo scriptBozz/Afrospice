@@ -35,7 +35,7 @@ export const createProduct = async (req: Request, res: Response) => {
 export const getProducts = async (req: Request, res: Response) => {
   try {
     const products = await s_getAllProducts();
-    console.log(products, "products");
+    // console.log(products, "products");
     res.status(200).json(products);
   } catch (error) {
     console.log(error);
