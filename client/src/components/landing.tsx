@@ -20,7 +20,7 @@ export default function landing() {
           <Typography
             variant="h2"
             gutterBottom
-            fontWeight="800"
+            fontWeight="500"
             color="#025629"
           >
             Experience Home Abroad:
