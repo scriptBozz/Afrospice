@@ -144,7 +144,9 @@ align-items: center;
   background-color: #825e26;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  position: fixed;
+
 }
 
 .navbarbrand h2 {
