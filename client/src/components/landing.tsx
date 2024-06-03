@@ -64,7 +64,6 @@ export default function landing() {
       <div className="content">
         <div className="left-content">
           <Typography
-            variant="h4"
             gutterBottom
             fontWeight="4vw"
             color="#025629"
