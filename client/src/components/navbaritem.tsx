@@ -97,7 +97,7 @@ export default function NavBarItem() {
     <div className="navbar">
       <div className="navbarbrand">
         <img src={Logo} alt="logo" />
-        <h2>AFROSPICE</h2>
+        <h3>AFROSPICE</h3>
       </div>
       <div className="navmenuitems">
         <Link to="/">
