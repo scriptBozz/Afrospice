@@ -73,6 +73,7 @@ body{
   gap: 30px;
   width: 70%;
   margin: 0 auto;
+  margin-top: 100px;
 
 }
 
@@ -112,7 +113,7 @@ body{
 .store{
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  
 
 }
 
