@@ -121,13 +121,13 @@ export default function NavBarItem() {
           <button className="navmenuitem navbutton">Buy / Order</button>
         </Link>
       </div>
-      <Button onClick={toggleDrawer(true)} sx={{ bgcolor: "#FF8000" }}>
-        <MenuIcon sx={{ fontSize: 40, color:"white", marginRight: "30px"}} />
-      </Button>
-      <Drawer
-        open={open}
-        onClose={toggleDrawer(false)}
+      <Button
+        onClick={toggleDrawer(true)}
+        sx={{ bgcolor: "#FF8000", marginRight: "30px" }}
       >
+        <MenuIcon sx={{ fontSize: 40, color: "white" }} />
+      </Button>
+      <Drawer open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </div>

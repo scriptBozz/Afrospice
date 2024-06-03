@@ -33,7 +33,6 @@ export default function landing() {
         </div> */}
           <Typography
             variant="h5"
-            gutterBottom
             fontWeight="300"
             color="#FFFFFF"
           >
