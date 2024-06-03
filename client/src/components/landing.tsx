@@ -42,7 +42,6 @@ export default function landing() {
 
           <Typography
             variant="h4"
-            gutterBottom
             fontWeight="400"
             color="#FFFFFF"
           >
