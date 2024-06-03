@@ -334,11 +334,10 @@ align-items: center;
 
 
 .container {
-  display: flex;
   height: 500px; /* Adjust the height as needed */
   width: 80%;
   position: relative;
-  background-color: #825e26; /* Fallback color */
+  /* background-color: #825e26; */
   background-image:url(./assets/images/banner1.jpg);
   background-position: center;
   background-size: contain;
