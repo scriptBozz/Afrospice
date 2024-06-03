@@ -18,7 +18,6 @@ export default function Favourites() {
 
   return (
     <div className="favourites card">
-      <div className="margin"></div>
 
       {favourites.map((item) => (
         <div key={item._id} className="favourite-item">
