@@ -157,6 +157,8 @@ align-items: center;
   border: 1px solid #6b4404;
   border-radius: 50px;
   background-color: #6b4404;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .navbarbrand img{
   width: 50px;
@@ -390,6 +392,9 @@ align-items: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   background-color: #f0f0f0;
+}
+.margin{
+  height: 50px;
 }
 
 @media  (max-width: 750px){
