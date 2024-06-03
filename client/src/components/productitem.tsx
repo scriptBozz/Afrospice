@@ -30,7 +30,6 @@ export default function Productitem({ product }: Prop) {
   };
   return (
     <div className="flex-item">
-      <div className="margin"></div>
       <Card sx={{ maxWidth: 250 }} key={product._id}>
         <CardHeader
           avatar={
