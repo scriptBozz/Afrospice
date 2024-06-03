@@ -19,7 +19,6 @@ export default function ProductList() {
  
   return (
     <div className="product-div">
-      <div className="margin"></div>
 
       {productList.map((item) => {
         return <Productitem key={item._id} product={item} />;
