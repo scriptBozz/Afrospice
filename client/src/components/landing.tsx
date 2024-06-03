@@ -68,8 +68,9 @@ export default function landing() {
             fontWeight="4vw"
             color="#025629"
             fontFamily="lora"
+            margin="10px"
           >
-            Connect with Dealer and Vendors of your native spices and cuisine
+            Connect with Vendors of your native spices and cuisine
           </Typography>
         </div>
         <div className="right-content">right</div>
