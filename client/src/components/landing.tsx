@@ -13,6 +13,7 @@ import googleplay from "../assets/images/googleplay.png"
 export default function landing() {
   return (
     <div className="landing">
+      <div className="margin"></div>
       <div className="container "></div>
       <div className="landingheader">
         <div className="landingtext">

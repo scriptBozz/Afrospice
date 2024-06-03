@@ -122,7 +122,7 @@ export default function NavBarItem() {
         </Link>
       </div>
       <Button onClick={toggleDrawer(true)} sx={{ bgcolor: "#FF8000" }}>
-        <MenuIcon sx={{ fontSize: 40, color:"white", marginRight: "20px"}} />
+        <MenuIcon sx={{ fontSize: 40, color:"white", marginRight: "30px"}} />
       </Button>
       <Drawer
         open={open}
