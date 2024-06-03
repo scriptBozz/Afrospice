@@ -8,7 +8,6 @@ export default function store() {
  
   return (
     <div className="store">
-      <div className="margin"></div>
       <ProductList />
     </div>
   );
