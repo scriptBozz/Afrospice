@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { productActions } from "../redux/slices/product";
@@ -17,27 +17,33 @@ export default function Favourites() {
   };
 
   return (
-    <div className="favourites card">
+    <Fragment>
+      <div className="margin"></div>
+      <div className="favourites card">
+        {favourites.map((item) => (
+          <div key={item._id} className="favourite-item">
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <img
+                alt="img"
+                src={item.image}
+                style={{ width: 50, height: 50 }}
+              />
+              {item.title}
+            </div>
+            <div>{item.price}</div>
 
-      {favourites.map((item) => (
-        <div key={item._id} className="favourite-item">
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <img alt="img" src={item.image} style={{ width: 50, height: 50 }} />
-            {item.title}
+            <Button
+              sx={{ bgcolor: "#FF8000", color: "#000000" }}
+              startIcon={<DeleteIcon />}
+              onClick={() => {
+                removeFavourite(item);
+              }}
+            >
+              remove
+            </Button>
           </div>
-          <div>{item.price}</div>
-
-          <Button
-            sx={{ bgcolor: "#FF8000", color: "#000000" }}
-            startIcon={<DeleteIcon />}
-            onClick={() => {
-              removeFavourite(item);
-            }}
-          >
-            remove
-          </Button>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </Fragment>
   );
 }

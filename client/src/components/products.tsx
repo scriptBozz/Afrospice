@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../redux/store";
 import { fetchProductData } from "../redux/thunk/products";
 import Productitem from "./productitem";
+import Loading from "./loading";
 
 
 export default function ProductList() {
@@ -16,7 +17,9 @@ export default function ProductList() {
     dispatch(fetchProductData());
   }, [dispatch]);
 
- 
+  if (!products) {
+     return <Loading/>
+  };
   return (
     <div className="product-div">
 

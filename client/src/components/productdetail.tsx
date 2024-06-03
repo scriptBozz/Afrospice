@@ -5,6 +5,7 @@ import { AppDispatch, RootState } from "../redux/store";
 import { Button } from "@mui/material";
 import { cartActions } from "../redux/slices/carts";
 import { Product } from "../types/type";
+import Loading from "./loading";
 
 import { fetchProductDetail } from "../redux/thunk/products";
 
@@ -26,7 +27,7 @@ export default function ProductDetail() {
   }, [dispatch, id]);
 
   if (!productDetail) {
-    return <div>Loading...</div>; // Add more descriptive loading message
+    return <Loading/>; // Add more descriptive loading message
   }
 
   return (
