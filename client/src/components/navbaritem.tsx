@@ -11,6 +11,8 @@ import ListItemText from "@mui/material/ListItemText";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import Logo from "../assets/images/logo.png"
+
 export default function NavBarItem() {
   const [open, setOpen] = useState(false);
 
@@ -94,6 +96,7 @@ export default function NavBarItem() {
   return (
     <div className="navbar">
       <div className="navbarbrand">
+        <img src={Logo} alt="logo" />
         <h2>Afrospice</h2>
       </div>
       <div className="navmenuitems">

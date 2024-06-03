@@ -149,7 +149,16 @@ align-items: center;
   position: fixed;
  z-index: 1000;
 }
-
+.navbarbrand{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navbarbrand img{
+  width: 50px;
+  height: 50px;
+}
 .navbarbrand h2 {
   margin: 0;
   font-size: 24px;
