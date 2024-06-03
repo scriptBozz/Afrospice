@@ -4,7 +4,7 @@ export default function Wishlist() {
   return (
     <div style={{ height: "100vh" }}>
       <div className="margin"></div>
-      <h3>no data</h3>
+      <h3 style={{margin:"auto"}}>no data</h3>
     </div>
   );
 }

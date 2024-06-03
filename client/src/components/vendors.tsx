@@ -4,7 +4,7 @@ export default function Vendors() {
   return (
     <div style={{ height: "100vh" }}>
       <div className="margin"></div>
-      <h4> comming soon...</h4>
+      <h4 style={{ margin: "auto" }}> comming soon...</h4>
     </div>
   );
 }

@@ -49,7 +49,8 @@ export default function CartList() {
   }
 
   return (
-    <div className="card" style={{height:"100vh"}}>
+    <div className="card" style={{ height: "100vh" }}>
+      <div className="margin"></div>
       <h1> Your Cart List</h1>
       <div className="cartList">
         {cartList.map((item) => (
