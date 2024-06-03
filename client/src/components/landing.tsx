@@ -22,6 +22,7 @@ export default function landing() {
             gutterBottom
             fontWeight="500"
             color="#025629"
+            fontFamily="lora"
           >
             Experience Home Abroad:
           </Typography>
@@ -35,6 +36,7 @@ export default function landing() {
             variant="h5"
             fontWeight="300"
             color="#FFFFFF"
+            fontFamily="lora"
           >
             Connect with Dealer and Vendors of your native spices and cuisine
           </Typography>
@@ -43,6 +45,7 @@ export default function landing() {
             variant="h4"
             fontWeight="400"
             color="#FFFFFF"
+            fontFamily="lora"
           >
             Find shops and Vendors near you.
           </Typography>
