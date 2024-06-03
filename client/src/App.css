@@ -145,7 +145,7 @@ align-items: center;
   background-color: #825e26;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: fixed;
  z-index: 1000;
 }
@@ -338,7 +338,7 @@ align-items: center;
 
 .container {
   height: 500px; 
-  width: 70%;
+  width: 60%;
   position: relative;
   /* background-color: #825e26; */
   background-image:url(./assets/images/banner1.jpg);
@@ -347,15 +347,19 @@ align-items: center;
   background-repeat: no-repeat;
   /* background-image: linear-gradient(to bottom right, #c2aa85, #684907); */
   margin: auto;
-  
+  margin-top: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
 }
-
+ .content{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+ }
 
 .left-content,
 .right-content {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -13,9 +13,7 @@ import googleplay from "../assets/images/googleplay.png"
 export default function landing() {
   return (
     <div className="landing">
-      <div className="container ">
-        
-      </div>
+      <div className="container "></div>
       <div className="landingheader">
         <div className="landingtext">
           <Typography
@@ -51,9 +49,11 @@ export default function landing() {
           </button>
         </div>
       </div>
-
-      <div className="left-content"> left</div>
-      <div className="right-content">right</div>
+      <div className="content">
+        <div className="left-content"> left</div>
+        <div className="right-content">right</div>
+      </div>
+      
 
       <div className="landing1">
         <div>
