@@ -74,6 +74,7 @@ export default function Register() {
   return (
     <Container component="main" maxWidth="xs" sx={{ p: "7rem 0" }}>
       <CssBaseline />
+      <div className="margin"></div>
       <Box
         sx={{
           display: "flex",

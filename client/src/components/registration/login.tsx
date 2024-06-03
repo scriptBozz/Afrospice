@@ -72,6 +72,7 @@ export default function Login() {
   return (
     <Container component="main" maxWidth="xs" sx={{ p: "3rem 0" }}>
       <CssBaseline />
+      <div className="margin"></div>
       <Box
         sx={{
           display: "flex",
@@ -122,7 +123,10 @@ export default function Login() {
           >
             Sign In
           </Button>
-          <Grid container sx={{ alignItems:"center", justifyContent:"center" }}>
+          <Grid
+            container
+            sx={{ alignItems: "center", justifyContent: "center" }}
+          >
             <Grid item>
               <Link to={"/register"}>{"Don't have an account? Sign Up"}</Link>
             </Grid>

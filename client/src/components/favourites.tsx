@@ -18,7 +18,8 @@ export default function Favourites() {
 
   return (
     <div className="favourites card">
-      
+      <div className="margin"></div>
+
       {favourites.map((item) => (
         <div key={item._id} className="favourite-item">
           <div style={{ display: "flex", flexDirection: "column" }}>
@@ -28,7 +29,7 @@ export default function Favourites() {
           <div>{item.price}</div>
 
           <Button
-             sx={{bgcolor: "#FF8000" ,color: "#000000"}}
+            sx={{ bgcolor: "#FF8000", color: "#000000" }}
             startIcon={<DeleteIcon />}
             onClick={() => {
               removeFavourite(item);
