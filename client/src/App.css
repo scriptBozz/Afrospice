@@ -334,7 +334,7 @@ align-items: center;
 
 
 .container {
-  /* height: 500px;  */
+  height: 500px; 
   width: 80%;
   position: relative;
   /* background-color: #825e26; */
@@ -421,6 +421,24 @@ align-items: center;
   .productDetail > div:last-child button {
     margin-bottom: 0;
   }
+
+
+.container {
+  height: 200px; 
+  width: 80%;
+  position: relative;
+  /* background-color: #825e26; */
+  background-image:url(./assets/images/banner1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-image: linear-gradient(to bottom right, #c2aa85, #684907); */
+  margin: auto;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
 }
 
 @media (min-width: 1024px) {
