@@ -32,15 +32,20 @@ export default function landing() {
           </Typography>
         </div> */}
           <Typography
-            variant="h6"
+            variant="h5"
             gutterBottom
             fontWeight="300"
-            color="#025629"
+            color="#FFFFFF"
           >
             Connect with Dealer and Vendors of your native spices and cuisine
           </Typography>
 
-          <Typography variant="h4" gutterBottom fontFamily="ojuju">
+          <Typography
+            variant="h4"
+            gutterBottom
+            fontWeight="400"
+            color="#FFFFFF"
+          >
             Find shops and Vendors near you.
           </Typography>
         </div>
