@@ -8,13 +8,13 @@ import IconButton from "@mui/material/IconButton";
 import appstore from "../assets/images/appstore.png"
 import hawei from "../assets/images/hawei.png";
 import googleplay from "../assets/images/googleplay.png"
+import { Button } from "@mui/material";
 
 export default function landing() {
   return (
     <div className="landing">
       <div className="container ">
-        <div className="left-content"> left</div>
-        <div className="right-content">right</div>
+        <Button> SHOP NOW</Button>
       </div>
       <div className="landingheader">
         <div className="landingtext">
@@ -51,6 +51,9 @@ export default function landing() {
           </button>
         </div>
       </div>
+
+      <div className="left-content"> left</div>
+      <div className="right-content">right</div>
 
       <div className="landing1">
         <div>
