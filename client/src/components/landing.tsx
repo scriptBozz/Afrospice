@@ -31,7 +31,12 @@ export default function landing() {
             Unlock Authentic Flavors, Seamless Connections
           </Typography>
         </div> */}
-          <Typography variant="h6" fontFamily="ojuju">
+          <Typography
+            variant="h6"
+            gutterBottom
+            fontWeight="300"
+            color="#025629"
+          >
             Connect with Dealer and Vendors of your native spices and cuisine
           </Typography>
 
