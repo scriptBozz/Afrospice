@@ -24,7 +24,7 @@ export default function landing() {
             color="#025629"
             fontFamily="lora"
           >
-            Experience Home Abroad:
+            Experience Home Abroad
           </Typography>
 
           {/* <div className="landingtext2">
@@ -62,7 +62,17 @@ export default function landing() {
         </div>
       </div>
       <div className="content">
-        <div className="left-content"> left</div>
+        <div className="left-content">
+          <Typography
+            variant="h4"
+            gutterBottom
+            fontWeight="400"
+            color="#025629"
+            fontFamily="lora"
+          >
+            Connect with Dealer and Vendors of your native spices and cuisine
+          </Typography>
+        </div>
         <div className="right-content">right</div>
       </div>
 
