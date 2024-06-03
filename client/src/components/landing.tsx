@@ -66,7 +66,7 @@ export default function landing() {
           <Typography
             variant="h4"
             gutterBottom
-            fontWeight="400"
+            fontWeight="4vw"
             color="#025629"
             fontFamily="lora"
           >
