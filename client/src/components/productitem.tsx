@@ -9,8 +9,12 @@ import CardActions from "@mui/material/CardActions";
 import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+
 import FavoriteIcon from "@mui/icons-material/Favorite";
+// import ThumbUpOffAltIcon from "@mui/icons-material/ThumbUpOffAlt";
+// import ThumbDownOffAltIcon from "@mui/icons-material/ThumbDownOffAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
+// import ReviewsIcon from "@mui/icons-material/Reviews";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { Prop, Product } from "../types/type";
 import { useDispatch } from "react-redux";
@@ -20,6 +24,9 @@ import { cartActions } from "../redux/slices/carts";
 export default function Productitem({ product }: Prop) {
   const dispatch = useDispatch();
 
+  // const addlike = (item: Product) => {
+  //   dispatch(productActions.likePost(item._id));
+  // };
 
   function onClickHandler(item: Product) {
     dispatch(cartActions.addCartList(item));
@@ -71,11 +78,7 @@ export default function Productitem({ product }: Prop) {
             <FavoriteIcon />
           </IconButton>
 
-          <IconButton
-            onClick={() => {
-              onClickHandler(product);
-            }}
-          >
+          <IconButton onClick={() => { onClickHandler(product); }}>
             <AddShoppingCartIcon />
           </IconButton>
         </CardActions>

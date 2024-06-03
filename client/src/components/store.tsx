@@ -7,8 +7,9 @@ import ProductList from './products'
 export default function store() {
  
   return (
-    <div className="store">
+      <div className='store'>
       <ProductList />
+     
     </div>
-  );
+  )
 }
