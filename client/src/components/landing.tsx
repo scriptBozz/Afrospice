@@ -20,8 +20,8 @@ export default function landing() {
           <Typography
             variant="h2"
             gutterBottom
-            fontFamily="ojuju"
             fontWeight="800"
+            color="#025629"
           >
             Experience Home Abroad:
           </Typography>
@@ -54,7 +54,6 @@ export default function landing() {
         <div className="left-content"> left</div>
         <div className="right-content">right</div>
       </div>
-      
 
       <div className="landing1">
         <div>
